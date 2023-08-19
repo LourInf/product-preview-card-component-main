@@ -1,0 +1,113 @@
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--Cream);
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  padding-right: 10px;
+  color: var(--Very-dark-blue);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 620px;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 20px;
+  letter-spacing: 3px;
+  color: var(--Dark-grayish-blue);
+  font-size: 14px;
+}
+
+.offer {
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px;
+  gap: 20px;
+  max-width: 250px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.text {
+  color: var(--Dark-grayish-blue);
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.new-price {
+  font-family: "Fraunces", serif;
+  color: var(--Dark-cyan);
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 8px;
+}
+
+.old-price {
+  font-family: "Montserrat", sans-serif;
+  color: var(--Dark-grayish-blue);
+  font-size: 12px;
+  padding-left: 20px;
+  text-decoration: line-through;
+}
+
+.btn {
+  background-color: var(--Dark-cyan);
+  color: var(--White);
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  padding: 16px;
+  font-size: 15px;
+  border-style: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: var(--Very-dark-blue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
